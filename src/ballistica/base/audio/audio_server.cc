@@ -311,9 +311,9 @@ void AudioServer::Start_() {
               " OPENALSOFT-FATAL-ERROR-LOG-END -----------------------");
         openalsoft_android_log_.clear();
       }
-      FatalError(
-          "No audio devices found. Do you have speakers/headphones/etc. "
-          "connected?");
+      //FatalError(
+      //    "No audio devices found. Do you have speakers/headphones/etc. "
+      //    "connected?");
     }
 
     impl_->alc_context = alcCreateContext(device, nullptr);
